@@ -1,0 +1,239 @@
+body {
+  font-family: "JetBrains Mono", monospace;
+  color: #555;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.login-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  font-family: "JetBrains Mono", monospace;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #555;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: white;
+  color: #555;
+}
+
+button {
+  font-family: "JetBrains Mono", monospace;
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button.mood-buttons {
+  background-color: #3a081f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: white;
+  color: #555;
+  border: 1px solid #555;
+}
+
+.password-reset-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.password-reset-link:hover {
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-self: flex-start;
+  justify-content: space-between;
+}
+
+.header h1 {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+/*Gradient Background*/
+@keyframes gradientBackground {
+  0% {
+    background: linear-gradient(to bottom right, lightblue, rgb(172, 231, 172));
+  }
+  25% {
+    background: linear-gradient(
+      to right,
+      rgb(172, 231, 172),
+      rgb(249, 249, 181)
+    );
+  }
+  50% {
+    background: linear-gradient(to bottom right, rgb(249, 249, 181), pink);
+  }
+  75% {
+    background: linear-gradient(to bottom right, pink, lavender);
+  }
+  100% {
+    background: linear-gradient(to bottom right, lavender, lightblue);
+  }
+}
+
+.background {
+  animation: gradientBackground 10s ease infinite;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.mood-struct {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-page {
+  width: 100%;
+  height: 100vh;
+}
+
+/*Typewriter animation*/
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation executes */
+  border-right: 0.15em solid #555; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  width: 0; /* Start with zero width and expand */
+  animation: typing 3.5s steps(40, end) forwards,
+    blink-caret 0.75s step-end infinite;
+  /* Adjust the number of steps for the typing and the speed/duration to match the text length */
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Cursor animations */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #555;
+  }
+}
+
+.mood-container {
+  background-color: white;
+  width: 75%;
+  padding: 20px;
+  margin: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.cal-header {
+  font-size: 34px;
+  width: 50vh;
+}
+
+.logentries {
+  width: 50vh;
+  list-style: none;
+  justify-items: center;
+}
+
+.log-struct {
+  display: flex;
+  align-self: center;
+  width: 100vh;
+}
+
+.apiForm {
+  display: flex;
+  margin: 20px;
+  justify-self: center;
+  padding: 5px 20px;
+}
+
+.response {
+  padding: 5px 20px;
+}
+
+.chat-log {
+  display: flex;
+  flex-direction: column; /* Adjust direction as needed */
+  align-items: flex-start;
+  padding: 0 350px;
+}
