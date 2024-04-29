@@ -3,4 +3,4 @@ Affirmations and mental wellness tracker app using Firebase, OpenAI, Vercel, Rea
 For HackDavis 2024
 
 https://devpost.com/software/affirmi
-![](https://github.com/walson6/affirmi-deploy/blob/master/affirmiDemo.gif)
+![](https://github.com/walson6/affirmi-deploy/blob/main/affirmiDemo.gif)
